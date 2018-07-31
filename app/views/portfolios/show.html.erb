@@ -1,0 +1,25 @@
+<h1>SHOW</h1>
+
+<%= @portfolio_item.inspect %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @portfolio_item.title %>
+</p>
+
+<p>
+  <strong>Subtitle:</strong>
+  <em><%= @portfolio_item.subtitle %></em>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @portfolio_item.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <p><%= image_tag @portfolio_item.main_image %></p>
+</p>
+
+
