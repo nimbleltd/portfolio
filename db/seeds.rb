@@ -38,7 +38,7 @@ puts "5 skills created"
     subtitle: "Ruby on Rails",
     body: "body",
     main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/50x100"
+    thumb_image: "http://via.placeholder.com/100x50"
   )
 end
 
@@ -48,7 +48,7 @@ end
     subtitle: "Angular",
     body: "body",
     main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/50x100"
+    thumb_image: "http://via.placeholder.com/100x50"
   )
 end
 
