@@ -1,25 +1,17 @@
-<h1>SHOW</h1>
+<%= image_tag @portfolio_item.main_image %>
 
-<%= @portfolio_item.inspect %>
+<h1><%= @portfolio_item.title %></h1>
 
-<p>
-  <strong>Title:</strong>
-  <%= @portfolio_item.title %>
-</p>
 
-<p>
-  <strong>Subtitle:</strong>
-  <em><%= @portfolio_item.subtitle %></em>
-</p>
+<em><%= @portfolio_item.subtitle %></em>
 
-<p>
-  <strong>Body:</strong>
-  <%= @portfolio_item.body %>
-</p>
+<p> <%= @portfolio_item.body %></p>
 
-<p>
-  <strong>Image:</strong>
-  <p><%= image_tag @portfolio_item.main_image %></p>
-</p>
+<h2>Technologies Used:</h2>
 
+<% @portfolio_item.technologies.each do |t| %>
+
+<p> <%= t.name %></p>
+
+<% end %>
 
