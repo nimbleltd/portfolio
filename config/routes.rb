@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
 
+  get 'guides/book'
+
   resources :blogs do 
     member do
       get :toggle_status

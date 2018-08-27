@@ -2,7 +2,7 @@
 
 <h1>Blogs</h1>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>BlogTitle</th>
@@ -10,12 +10,16 @@
       <th>Body</th>
       <th colspan="4"></th>
     </tr>
-  </thead>
+  </thead> -->
 
-  <tbody>
-    <%= render @blogs %>
-  </tbody>
-</table>
+  <!-- <tbody> -->
+<% cache do %>
+  <div>
+    <%= render partial: @blogs, spacer_template: "blog_ruler"%>
+  </div>
+<% end %>
+<!--   </tbody>
+</table> -->
 
 <br>
 
