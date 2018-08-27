@@ -7,4 +7,14 @@ module ApplicationHelper
        (link_to "Login", new_user_session_path)
     end
   end
+
+  def sample_helper
+    content_tag(:div, "My content", class: "my-class")
+  end
+
+  def source_helper(layout_name)
+    if session[:source]
+      content_tag(:p, "Thanks for visiting me from #{session[:source]}!!! And you are here: #{layout_name}")
+    end
+  end
 end
