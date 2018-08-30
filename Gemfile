@@ -56,3 +56,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.0'
 gem 'devise', '~> 4.5'
+
+
+gem 'jquery-rails'
+gem 'simple_form'
+gem 'popper_js'
+gem 'tether-rails'
+# gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'bootstrap'
+gem 'sprockets-rails'

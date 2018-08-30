@@ -2,9 +2,10 @@
 <html>
   <head>
     <title><%= @page_title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale-1, shrinl-to-fit=no"charset="utf-8">
     <%= csrf_meta_tags %>
 
-    <meta name="keywords" content=<%= @seo_keywords %>
+    <meta name="keywords" content="<%= @seo_keywords %>">
 
     <%= csp_meta_tag %>
 
@@ -20,7 +21,11 @@
 
     <%= login_helper %>
 
+
+    <%#= render 'layouts/navigation' %>
     <%= yield %>
+
+    <%= @copyright %>
 
     <%= source_helper("application layout")%>
   </body>
