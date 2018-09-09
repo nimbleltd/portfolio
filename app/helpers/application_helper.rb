@@ -17,4 +17,9 @@ module ApplicationHelper
       content_tag(:p, "Thanks for visiting me from #{session[:source]}!!! And you are here: #{layout_name}")
     end
   end
+
+  def copyright_generator
+    NimbleltdViewTool::Renderer.copyright 'Paul Campbell', 'All rights reserved'
+  end
+
 end
