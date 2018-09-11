@@ -1,6 +1,9 @@
+<p>
+<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin)%>
 <p id="notice"><%= notice %></p>
 
 <h1>Blogs</h1>
+
 
 <table>
   <thead>
@@ -19,4 +22,3 @@
 
 <br>
 
-<%= link_to 'New Blog', new_blog_path %>
